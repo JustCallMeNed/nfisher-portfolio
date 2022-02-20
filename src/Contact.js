@@ -2,21 +2,24 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 const Contact = () => {
-  // useEffect(() => {
-  //   gsap.timeline(
-  //     gsap.defaults({ ease: "back" }),
-  //     gsap.from(".contactHeader", { x: -100, opacity: 0 }),
-  //     gsap.from("hr", { scale: 0, opacity: 0 }),
-  //     gsap.from(".contactList", { x: 100, opacity: 0, stagger: 0.15 })
-  //   );
-  // }, []);
+  useEffect(() => {
+    gsap.timeline(
+      gsap.defaults({ ease: "power2" }),
+      gsap.from(".contactHeader", { duration: 1.5, x: -10, opacity: 0 }),
+      gsap.from(".contactBody", { duration: 1.5, opacity: 0 }),
+      gsap.from("hr", { duration: 2, scale: 0, opacity: 0 }),
+      gsap.from(".contactList", { x: 10, opacity: 0, stagger: 0.15 })
+    );
+  }, []);
   return (
     <div>
       <div className="contactHeader">
         <h1>Contact Me</h1>
       </div>
       <hr />
-      <p>Feel free to contact me by any of these methods!</p>
+      <div className="contactBody">
+        <p>Feel free to contact me by any of these methods!</p>
+      </div>
       <div className="contactList">
         <h3 className="contactList">
           <a href="mailto:neal.c.fisher@gmail.com">Email</a>

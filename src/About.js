@@ -2,18 +2,15 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 const About = () => {
-  // useEffect(() => {
-  //   gsap.timeline(
-  //     gsap.defaults({ ease: "back", delay: 0.5 }),
-  //     gsap.from(".aboutHeader", { y: -100, opacity: 0, stagger: 0.5 }),
-  //     gsap.from(".aboutMain", { y: 100, delay: 0.8, opacity: 0 }),
-  //     gsap.from(
-  //       ".aboutList",
-  //       { y: 100, delay: 1, opacity: 0, stagger: 0.15 },
-  //       gsap.from("hr", { delay: 1.5, scale: 0, opacity: 1 })
-  //     )
-  //   );
-  // }, []);
+  useEffect(() => {
+    gsap.timeline(
+      gsap.defaults({ ease: "slow" }),
+      gsap.from(".aboutHeader", { y: -10, opacity: 0, stagger: 0.5 }),
+      gsap.from(".aboutMain", { y: -10, delay: 0.8, opacity: 0, stagger: 0.5 }),
+      gsap.from(".aboutList", { y: 10, delay: 0.4, opacity: 0, stagger: 0.15 }),
+      gsap.from("hr", { delay: 0.5, duration: 2, scale: 0, opacity: 0 })
+    );
+  }, []);
   return (
     <div>
       <title>Neal Fisher</title>
@@ -47,7 +44,7 @@ const About = () => {
           <li className="aboutList">Linguistics</li>
         </ul>
       </div>
-      <div className="Main">
+      <div className="aboutMain">
         <p>
           This site is a demonstration of my skills in HTML, CSS and Javascript
           and a showcase of a few projects.
