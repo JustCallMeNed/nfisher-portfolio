@@ -73,7 +73,7 @@ button {
   margin: 1em;
   background-image: linear-gradient(
     45deg,
-    rgb(173, 173, 173),
-    /* rgb(101, 112, 111), */ rgb(41, 80, 77)
+    rgb(95, 95, 95),
+    /* rgb(101, 112, 111), */ rgb(22, 43, 41)
   );
 }

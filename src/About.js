@@ -7,8 +7,8 @@ const About = () => {
       gsap.defaults({ ease: "slow" }),
       gsap.from(".aboutHeader", { y: -10, opacity: 0, stagger: 0.5 }),
       gsap.from(".aboutMain", { y: -10, delay: 0.8, opacity: 0, stagger: 0.5 }),
-      gsap.from(".aboutList", { y: 10, delay: 0.4, opacity: 0, stagger: 0.15 }),
-      gsap.from("hr", { delay: 0.5, duration: 2, scale: 0, opacity: 0 })
+      gsap.from("hr", { delay: 0.5, duration: 2, scale: 0, opacity: 0 }),
+      gsap.from(".aboutList", { y: 10, delay: 1.8, opacity: 0, stagger: 0.15 })
     );
   }, []);
   return (
@@ -18,14 +18,15 @@ const About = () => {
         <h1>About Me</h1>
         <hr />
       </div>
-      <div className="aboutMain">
-        <p>
+      <div>
+        <p className="aboutMain">
           My name is Neal Fisher - I was born and raised in the Midwest,
           currently based in Memphis, TN. I'm a self-taught programmer currently
           mostly working in Javascript and HTML/CSS - though that will change as
           time goes on because I'm also very interested in learning C# and C++ -
           my ultimate goal is to learn how to use Unreal and Unity.
-          <br />
+        </p>
+        <p className="aboutMain">
           My interests are mainly artistic and entertainment centered, but
           really when it comes down to it - I just like learning new things in
           general, whether or not they're obviously connected to art. Learning
