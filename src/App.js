@@ -15,7 +15,7 @@ function App() {
   // useEffect(() => {
   //   gsap.timeline(
   //     gsap.defaults({ scale: 0, ease: "slow" }),
-  //     gsap.from(".container", { opacity: 0, stagger: 0.3 }),
+  //     gsap.from(".container", { opacity: 0 }),
   //     gsap.from(".Active", { delay: 0.5, opacity: 0 })
   //   );
   // }, []);

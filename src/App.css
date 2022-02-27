@@ -48,11 +48,14 @@ button {
     rgb(173, 173, 173),
     /* rgb(101, 112, 111), */ rgb(41, 80, 77)
   );
+  border-radius: 1em;
 }
 
 .Nav {
   position: fixed bottom;
-  border: inset rgb(0, 109, 100) 0.2em;
+  box-shadow: 0em 0em 1em black;
+  /* border: inset rgb(0, 109, 100) 0.2em; */
+  border-radius: 1em;
   padding: 0.5em;
 }
 
@@ -66,7 +69,9 @@ button {
 .Active {
   display: flex;
   flex-flow: column;
-  border: inset rgb(0, 109, 100) 0.2em;
+  box-shadow: 0em 0em 1em black;
+  /* border: inset rgb(0, 109, 100) 0.2em; */
+  border-radius: 1em;
   min-height: 40em;
   /* overflow-y: scroll; */
   padding: 1em;

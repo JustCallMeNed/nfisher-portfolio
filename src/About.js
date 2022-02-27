@@ -22,9 +22,9 @@ const About = () => {
         <p className="aboutMain">
           My name is Neal Fisher - I was born and raised in the Midwest,
           currently based in Memphis, TN. I'm a self-taught programmer currently
-          mostly working in Javascript and HTML/CSS - though that will change as
-          time goes on because I'm also very interested in learning C# and C++ -
-          my ultimate goal is to learn how to use Unreal and Unity.
+          working in Javascript and HTML/CSS - though that will change as time
+          goes on because I'm also very interested in learning C# and C++ - my
+          ultimate goal is to learn how to use Unreal and Unity.
         </p>
         <p className="aboutMain">
           My interests are mainly artistic and entertainment centered, but
@@ -35,7 +35,7 @@ const About = () => {
         </p>
       </div>
       <div className="aboutList">
-        <p>A few of my other interests include--</p>
+        <p>A few of my other interests--</p>
         <ul>
           <li className="aboutList">Graphic Design</li>
           <li className="aboutList">Game Design</li>
@@ -48,7 +48,8 @@ const About = () => {
       <div className="aboutMain">
         <p>
           This site is a demonstration of my skills in HTML, CSS and Javascript
-          and a showcase of a few projects.
+          and a showcase of a few projects I've worked on, alone and with
+          others.
         </p>
       </div>
     </div>
