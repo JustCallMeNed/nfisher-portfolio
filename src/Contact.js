@@ -6,18 +6,18 @@ const Contact = () => {
     gsap.timeline(
       gsap.defaults({ ease: "power2" }),
       gsap.from(".contactHeader", { duration: 1.5, x: -10, opacity: 0 }),
-      gsap.from(".contactBody", { duration: 1.5, opacity: 0 }),
+      gsap.from(".contactMain", { duration: 1.5, opacity: 0 }),
       gsap.from("hr", { duration: 2, scale: 0, opacity: 0 }),
       gsap.from(".contactList", { x: 10, opacity: 0, stagger: 0.15 })
     );
   }, []);
   return (
     <div>
-      <div className="contactHeader">
+      <div className="Header" id="contactHeader">
         <h1>Contact Me</h1>
       </div>
       <hr />
-      <div className="contactBody">
+      <div className="Main" id="contactMain">
         <p>Feel free to contact me by any of these methods!</p>
       </div>
       <div className="contactList">

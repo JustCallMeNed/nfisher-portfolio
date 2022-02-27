@@ -5,17 +5,20 @@ const Portfolio = () => {
   useEffect(() => {
     gsap.timeline(
       gsap.defaults({ ease: "slow" }),
-      gsap.from(".portHeader", { duration: 1, x: -10, opacity: 0 }),
-      // gsap.from(".portBody", { duration: 1.5, opacity: 0 }),
+      gsap.from("#portHeader", { duration: 1, x: -10, opacity: 0 }),
       gsap.from("hr", { duration: 2, scale: 0, opacity: 0 }),
       gsap.from(".portList", { y: -10, delay: 1, opacity: 0, stagger: 0.15 })
     );
   }, []);
   return (
-    <div className="portHeader">
+    <div className="Header" id="portHeader">
       <h1>Projects</h1>
+      <PortfolioItem
+        linkAddress="https://docs.google.com/document/d/1uF4-jW5UQZsjt7Lav6rXIztP5WeEwy5bXEx8tKP3ek4/edit?usp=sharing"
+        projectName="Resume"
+      />
       <hr />
-      <div className="portList">
+      <div className="List" id="portList">
         <PortfolioItem
           linkAddress="https://tictalktoe.herokuapp.com/"
           projectName="Tic-Talk-Toe"
