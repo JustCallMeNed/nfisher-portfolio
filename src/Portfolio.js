@@ -25,12 +25,12 @@ const Portfolio = () => {
           projectDesc="A chat/gaming app built with React, Socket.io and GSAP"
         />
         <PortfolioItem
-          linkAddress="https://github.com/JustCallMeNed/ReactPokedex"
+          linkAddress="https://api-react-dex.herokuapp.com/"
           projectName="React Pokedex"
           projectDesc="A pokedex app built with React, Axios and Webpack; as well as a LOT of CSS."
         />
         <PortfolioItem
-          linkAddress="https://github.com/JustCallMeNed/QSCalculator"
+          linkAddress="https://qscalculator.herokuapp.com/"
           projectName="QS Calculator"
           projectDesc="A quite simple calculator app built with React, Webpack; my first foray into CSS."
         />

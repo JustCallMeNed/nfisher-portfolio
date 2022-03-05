@@ -3,28 +3,31 @@ App.css is for broad-strokes design elements */
 
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
-/* @gradient {
+
+#root {
+  position: relative;
   background-image: linear-gradient(
     45deg,
     rgb(63, 122, 117),
-    rgb(101, 112, 111), 
     rgb(173, 173, 173)
   );
-} */
+}
 
 .App {
+  /* transform: translateX(50%); */
   display: flex;
   flex-flow: column;
   text-align: center;
-  /* place-items: center; */
+  justify-content: center;
   min-height: 100%;
+  max-width: 60em;
   padding: 2em;
   font-family: "M PLUS Rounded 1c", sans-serif;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     45deg,
     rgb(63, 122, 117),
-    /* rgb(101, 112, 111), */ rgb(173, 173, 173)
-  );
+    rgb(173, 173, 173)
+  ); */
   color: white;
 }
 
@@ -35,9 +38,7 @@ a {
 button {
   cursor: pointer;
   margin: 0.5em;
-  /* border: double black 0.2em; */
   border-radius: 0.5em;
-  /* background-color: rgb(109, 179, 173); */
   font-family: "M PLUS Rounded 1c", sans-serif;
   text-shadow: 0em 0em 0.9em black;
   box-shadow: 0.3em 0.3em 0.2em black;
@@ -48,18 +49,13 @@ button {
   flex-flow: row;
   place-content: center;
   width: 100%;
-  background-image: linear-gradient(
-    45deg,
-    rgb(173, 173, 173),
-    /* rgb(101, 112, 111), */ rgb(41, 80, 77)
-  );
+  background-image: linear-gradient(45deg, rgb(173, 173, 173), rgb(41, 80, 77));
   border-radius: 1em;
 }
 
 .Nav {
   position: fixed bottom;
   box-shadow: 0em 0em 1em black;
-  /* border: inset rgb(0, 109, 100) 0.2em; */
   border-radius: 1em;
   padding: 0.5em;
 }
@@ -67,7 +63,6 @@ button {
 .NavBtn {
   display: inherit;
   place-content: center;
-  /* border: solid black 0.2em; */
   padding: 0.3em;
   width: fit-content;
 }
@@ -75,17 +70,11 @@ button {
   display: flex;
   flex-flow: column;
   box-shadow: 0em 0em 1em black;
-  /* border: inset rgb(0, 109, 100) 0.2em; */
   border-radius: 1em;
   min-height: 40em;
-  /* overflow-y: scroll; */
   padding: 1em;
   margin: 1em;
-  background-image: linear-gradient(
-    45deg,
-    rgb(95, 95, 95),
-    /* rgb(101, 112, 111), */ rgb(22, 43, 41)
-  );
+  background-image: linear-gradient(45deg, rgb(95, 95, 95), rgb(22, 43, 41));
 }
 
 .Header {
