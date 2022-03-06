@@ -21,7 +21,7 @@ const Contact = () => {
       <div className="Main" id="contactMain">
         <p>Feel free to contact me by any of these methods!</p>
       </div>
-      <div id="contactList">
+      <div className="List" id="contactList">
         <ContactItem
           linkAddress="mailto:neal.c.fisher@gmail.com"
           itemName="Email"
