@@ -18,7 +18,7 @@ const Navbar = () => {
       // }),
       gsap.from("hr", { duration: 2, scale: 0, opacity: 0 }),
       gsap.from(".NavList", { y: -10, delay: 1, opacity: 0 }),
-      gsap.from(".NavBtn", { x: -10, delay: 1, opacity: 0, stagger: 0.15 })
+      gsap.from(".NavBtn", { y: -10, delay: 1, opacity: 0, stagger: 0.15 })
     );
   }, []);
   return (
