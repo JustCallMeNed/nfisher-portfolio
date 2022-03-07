@@ -29,16 +29,17 @@ App.css is for broad-strokes design elements */
 
 a {
   color: aqua;
-  text-shadow: 0em 0em 0.25em white;
+  text-shadow: 0em 0em 0.5em rgba(255, 255, 255, 0.5);
 }
+/* a:visited {
+  color: rgba(0, 255, 255, 0.5);
+} */
 a:hover {
-  text-shadow: 0em 0em 0.5em rgb(255, 255, 130);
+  color: goldenrod;
+  text-shadow: 0em 0em 0.75em rgb(255, 255, 130);
 }
 a:active {
   text-shadow: 0em 0em 0.25em rgb(255, 255, 130);
-}
-a:visited {
-  color: rgba(0, 255, 255, 0.5);
 }
 button {
   cursor: pointer;
