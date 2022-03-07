@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 const Navbar = () => {
@@ -7,15 +7,6 @@ const Navbar = () => {
       gsap.defaults({ ease: "slow" }),
       gsap.from(".Nav", { duration: 2, opacity: 0 }),
       gsap.from(".navHeader", { duration: 1, x: 100, opacity: 0 }),
-      // gsap.to(".navSubheader", {
-      //   duration: 1,
-      //   text: { value: "Web Developer", delimiter: "" },
-      // }),
-      // gsap.to(".navSubheader", {
-      //   delay: 2,
-      //   duration: 1,
-      //   text: { value: "Front End Developer", delimiter: "" },
-      // }),
       gsap.from("hr", { duration: 2, scale: 0, opacity: 0 }),
       gsap.from(".NavList", { y: -10, delay: 1, opacity: 0 }),
       gsap.from(".NavBtn", { y: -10, delay: 1, opacity: 0, stagger: 0.15 })
