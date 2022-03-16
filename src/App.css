@@ -21,7 +21,6 @@ App.css is for broad-strokes design elements */
   text-align: center;
   place-content: center;
   min-height: 100%;
-  /* max-width: 60em; */
   padding: 2em;
   font-family: "M PLUS Rounded 1c", sans-serif;
   color: white;
@@ -98,4 +97,40 @@ button {
   font-family: "Itim", cursive;
   text-shadow: 0em 0em 0.25em white;
   text-shadow: 0em 0em 0.5em rgb(63, 122, 117);
+}
+
+@media screen and (max-width: 600px) {
+  #root {
+    width: 100%;
+  }
+  div {
+    max-width: 100%;
+  }
+  button {
+    margin: 0.1em;
+  }
+  .container {
+    width: 100%;
+  }
+  .App {
+    max-width: 100%;
+    padding: 0.25em;
+  }
+  .Active {
+    display: flex;
+    margin-top: 0.5em;
+    /* padding-left: 10%;
+    padding-right: 10%; */
+    min-width: auto;
+  }
+  .content {
+    max-width: 100%;
+    place-content: center;
+  }
+  .Main {
+    width: auto;
+  }
+  .List {
+    text-align: match-parent;
+  }
 }

@@ -12,7 +12,7 @@ const About = () => {
     );
   }, []);
   return (
-    <div>
+    <div className="content">
       <title>Neal Fisher</title>
       <div className="Header" id="aboutHeader">
         <h1>About Me</h1>

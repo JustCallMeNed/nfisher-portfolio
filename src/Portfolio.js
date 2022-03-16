@@ -11,7 +11,7 @@ const Portfolio = () => {
     );
   }, []);
   return (
-    <>
+    <div className="content">
       <div className="Header" id="portHeader">
         <h1>Projects</h1>
         <PortfolioItem
@@ -38,7 +38,7 @@ const Portfolio = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

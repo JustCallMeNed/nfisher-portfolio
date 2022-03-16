@@ -13,7 +13,7 @@ const Contact = () => {
     );
   }, []);
   return (
-    <>
+    <div className="content">
       <div className="Header" id="contactHeader">
         <h1>Contact Me</h1>
         <hr />
@@ -35,7 +35,7 @@ const Contact = () => {
           itemName="Github"
         />
       </div>
-    </>
+    </div>
   );
 };
 
