@@ -3,9 +3,9 @@ import gsap from "gsap";
 // import { useState } from "react/cjs/react.production.min";
 
 function LangSelect() {
-    // useState(() => {
-    //     const
-    // })
+  // useState(() => {
+  //     const
+  // })
   useEffect(() => {
     gsap.timeline(
       gsap.defaults({ ease: "slow" }),
@@ -24,7 +24,7 @@ function LangSelect() {
           </div>
           <div className="LangList">
             {/* <Link to="/"> */}
-            <button className="LangBtn" onClick={}>
+            <button className="LangBtn">
               <h2>ENG</h2>
             </button>
             {/* </Link> */}
