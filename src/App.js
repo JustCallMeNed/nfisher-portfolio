@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { gsap } from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
 
+import LangSelect from "./components/LangSelect";
 import Navbar from "./components/Navbar";
 import About from "./About";
 import Portfolio from "./Portfolio";
@@ -24,6 +25,7 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
+        <LangSelect />
         <div className="Active">
           <Routes>
             <Route path="/" element={<About />} />
