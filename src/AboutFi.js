@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
 
-const AboutFr = () => {
+const AboutFi = () => {
   useEffect(() => {
     gsap.timeline(
       gsap.defaults({ ease: "slow" }),
@@ -15,7 +15,7 @@ const AboutFr = () => {
     <div className="content">
       <title>Neal Fisher</title>
       <div className="Header" id="aboutHeader">
-        <h1>Sur Moi</h1>
+        <h1>Minusta</h1>
         <hr />
       </div>
       <div>
@@ -56,4 +56,4 @@ const AboutFr = () => {
   );
 };
 
-export default AboutFr;
+export default AboutFi;
