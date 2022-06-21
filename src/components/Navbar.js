@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
-const Navbar = () => {
+const Navbar = (lang, { setLang }) => {
   useEffect(() => {
     gsap.timeline(
       gsap.defaults({ ease: "slow" }),
@@ -12,17 +12,33 @@ const Navbar = () => {
       gsap.from(".NavBtn", { y: -10, delay: 1, opacity: 0, stagger: 0.15 })
     );
   }, []);
+  const mouseHover = gsap.timeline(
+    gsap.defaults({ ease: "power" }),
+    gsap.to(".NavBtn", { scale: 1.2, paused: true })
+  );
   return (
     <div>
       <div className="container">
         <div className="Nav">
           <div className="navHeader">
             <h1>Neal Fisher</h1>
-            <h3 className="navSubheader">Freelance Frontend Developer</h3>
+            <h3 className="navSubheader">
+              {
+                (lang = "eng"
+                  ? "Freelance Frontend Developer"
+                  : (lang = "fra"
+                      ? "Intégrateur Indépendant"
+                      : (lang = "suo" ? "Freelance Etupään Kehittäjä" : null)))
+              }
+            </h3>
           </div>
           <div className="NavList">
             <Link to="/">
-              <button className="NavBtn">
+              <button
+                className="NavBtn"
+                onMouseOver={mouseHover}
+                onMouseOut={mouseHover.reverse()}
+              >
                 <h2>About Me</h2>
               </button>
             </Link>
