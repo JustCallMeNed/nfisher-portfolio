@@ -44,7 +44,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        <Navbar lang={lang} setLang={setLang} />
         <LangSelect lang={lang} setLang={setLang} />
         <div className="Active">
           <Routes>

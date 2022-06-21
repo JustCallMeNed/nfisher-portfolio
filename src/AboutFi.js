@@ -20,16 +20,16 @@ const AboutFi = () => {
       </div>
       <div>
         <p className="Main" id="aboutMain">
-          Nimeni on Neal Fisher - synnyin ja kasvoin Keskilännessä, tällä
-          hetkellä Memphisissä, Tennesseen osavaltiossa. Olen itseoppinut
-          ohjelmoija, joka työskentelee tällä hetkellä Javascriptin ja
-          HTML/CSS:n parissa. Olen myös erittäin kiinnostunut C#:n ja C++:n
-          oppimisesta – tavoitteenani on oppia käyttämään Unrealia ja Unitya.
+          Nimeni on Neal Fisher - synnyin ja kasvoin Keskilännessä, ja tällä
+          hetkellä asun Memphis, Tennesseessä. Olen itseoppinut ohjelmoija, joka
+          työskentelee tällä hetkellä Javascriptin ja HTML/CSS:n parissa. Olen
+          myös erittäin kiinnostunut C#:n ja C++:n oppimisesta – tavoitteenani
+          on oppia käyttämään Unrealia ja Unitya.
         </p>
         <p className="Main" id="aboutMain">
-          Kiinnostukseni ovat pääasiassa taiteellisia ja viihdekeskeisiä, mutta
-          totta puhuen – nautin vain uusien asioiden oppimisesta, olivatpa ne
-          luonteeltaan ilmeisen taiteellisia vai eivät. Koodaamisen oppiminen ei
+          Kiinnostukseni ovat etupäässa taiteellisia ja viihdekeskeisiä, mutta
+          totta puhuen – nautin uusien asioiden oppimisesta, olivatpa ne
+          luonteeltaan ilmeisen taiteellisia tai eivät. Koodaamisen oppiminen ei
           ole ollut minulle helppoa, mutta se on ollut <i>erittäin</i>{" "}
           palkitsevaa.
         </p>
