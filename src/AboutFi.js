@@ -38,7 +38,7 @@ const AboutFi = () => {
         <p>Tässä joitain muita kiinnostuksen kohteitani--</p>
         <ul>
           <li id="aboutList">Graafinen suunnittelu</li>
-          <li id="aboutList">Pelin suunnittelu</li>
+          <li id="aboutList">Pelisuunnittelu</li>
           <li id="aboutList">Kirjoittaminen</li>
           <li id="aboutList">Musiikki</li>
           <li id="aboutList">Näytteleminen ja teatteri</li>
